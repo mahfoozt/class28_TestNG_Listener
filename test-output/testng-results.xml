@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="17" passed="10" failed="5" skipped="2">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-01-02T20:33:17 MST" name="Suite" finished-at="2024-01-02T20:34:08 MST" duration-ms="50904">
+    <groups>
+    </groups>
+    <test started-at="2024-01-02T20:33:17 MST" name="Test" finished-at="2024-01-02T20:34:08 MST" duration-ms="50904">
+      <class name="tests_michroTech_Parameter_DataProvider.copy.homePage_data_Provider">
+        <test-method signature="receiveData(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests_michroTech_Parameter_DataProvider.copy.homePage_data_Provider@6f03482]" started-at="2024-01-02T20:33:59 MST" name="receiveData" finished-at="2024-01-02T20:33:59 MST" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Method public void tests_michroTech_Parameter_DataProvider.copy.homePage_data_Provider.receiveData(java.lang.String,java.lang.String,java.lang.String) requires a @DataProvider named : passData]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Method public void tests_michroTech_Parameter_DataProvider.copy.homePage_data_Provider.receiveData(java.lang.String,java.lang.String,java.lang.String) requires a @DataProvider named : passData
+at org.testng.internal.Parameters.findDataProvider(Parameters.java:526)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:763)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:911)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- receiveData -->
+      </class> <!-- tests_michroTech_Parameter_DataProvider.copy.homePage_data_Provider -->
+      <class name="tests_dataTables.HomePageVerification">
+        <test-method signature="homePageVerification()[pri:0, instance:tests_dataTables.HomePageVerification@682b2fa]" started-at="2024-01-02T20:33:29 MST" name="homePageVerification" finished-at="2024-01-02T20:33:37 MST" duration-ms="7460" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageVerification -->
+      </class> <!-- tests_dataTables.HomePageVerification -->
+      <class name="tests_michroTech_DataProvider.HomePageVerification">
+        <test-method signature="homePageVerify1()[pri:0, instance:tests_michroTech_DataProvider.HomePageVerification@5bda8e08]" started-at="2024-01-02T20:33:43 MST" name="homePageVerify1" finished-at="2024-01-02T20:33:43 MST" duration-ms="72" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageVerify1 -->
+        <test-method signature="homePageVerify2()[pri:1, instance:tests_michroTech_DataProvider.HomePageVerification@5bda8e08]" started-at="2024-01-02T20:33:43 MST" name="homePageVerify2" finished-at="2024-01-02T20:33:44 MST" duration-ms="78" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[------homePageVerify2 Test is Fail will print---------------
+expected [Ayaat] but found [Rosy]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: ------homePageVerify2 Test is Fail will print---------------
+expected [Ayaat] but found [Rosy]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at tests_michroTech_DataProvider.HomePageVerification.homePageVerify2(HomePageVerification.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageVerify2 -->
+        <test-method signature="homePageVerify3()[pri:2, instance:tests_michroTech_DataProvider.HomePageVerification@5bda8e08]" started-at="2024-01-02T20:33:44 MST" name="homePageVerify3" finished-at="2024-01-02T20:33:44 MST" duration-ms="62" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[-------------------Home Page3 Test Fail-----------------------]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: -------------------Home Page3 Test Fail-----------------------
+at org.testng.Assert.fail(Assert.java:111)
+at tests_michroTech_DataProvider.HomePageVerification.homePageVerify3(HomePageVerification.java:40)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageVerify3 -->
+        <test-method signature="homePageVerify4()[pri:3, instance:tests_michroTech_DataProvider.HomePageVerification@5bda8e08]" started-at="2024-01-02T20:33:44 MST" name="homePageVerify4" finished-at="2024-01-02T20:33:44 MST" duration-ms="65" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[--------Home Page4 Test Skip-------------]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: --------Home Page4 Test Skip-------------
+at tests_michroTech_DataProvider.HomePageVerification.homePageVerify4(HomePageVerification.java:50)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageVerify4 -->
+        <test-method signature="homePageVerify5()[pri:4, instance:tests_michroTech_DataProvider.HomePageVerification@5bda8e08]" started-at="2024-01-02T20:33:44 MST" name="homePageVerify5" finished-at="2024-01-02T20:33:44 MST" duration-ms="46" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[------------homePageVerify5 Soft Assertion Done-------------
+expected [Ayaat] but found [Rosy],
+---------This stmt will be executed bcoz of Soft Assertion---------- expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: ------------homePageVerify5 Soft Assertion Done-------------
+expected [Ayaat] but found [Rosy],
+---------This stmt will be executed bcoz of Soft Assertion---------- expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at tests_michroTech_DataProvider.HomePageVerification.homePageVerify5(HomePageVerification.java:59)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageVerify5 -->
+        <test-method signature="homePageVerify6()[pri:5, instance:tests_michroTech_DataProvider.HomePageVerification@5bda8e08]" started-at="2024-01-02T20:33:44 MST" name="homePageVerify6" finished-at="2024-01-02T20:33:44 MST" duration-ms="51" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[-------No further stmt will not be executed bcoz of Hard Assertion---- expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: -------No further stmt will not be executed bcoz of Hard Assertion---- expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at tests_michroTech_DataProvider.HomePageVerification.homePageVerify6(HomePageVerification.java:67)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageVerify6 -->
+      </class> <!-- tests_michroTech_DataProvider.HomePageVerification -->
+      <class name="tests_michroTech_Parameter_DataProvider.copy.Test_Employee_Login">
+        <test-method signature="test_Employee_Login(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests_michroTech_Parameter_DataProvider.copy.Test_Employee_Login@3b0090a4]" started-at="2024-01-02T20:34:05 MST" name="test_Employee_Login" data-provider="alldata" finished-at="2024-01-02T20:34:07 MST" duration-ms="2575" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testpilot@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[https://it.microtechlimited.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_Employee_Login -->
+      </class> <!-- tests_michroTech_Parameter_DataProvider.copy.Test_Employee_Login -->
+      <class name="tests_michroTech_DataProvider.Test_Customer_Login">
+        <test-method signature="test_Customer_Login()[pri:3, instance:tests_michroTech_DataProvider.Test_Customer_Login@217ed35e]" started-at="2024-01-02T20:33:37 MST" name="test_Customer_Login" finished-at="2024-01-02T20:33:43 MST" duration-ms="6300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_Customer_Login -->
+      </class> <!-- tests_michroTech_DataProvider.Test_Customer_Login -->
+      <class name="tests_michroTech_Parameter_DataProvider.copy.homePage_data_Provider2">
+        <test-method signature="receiveData(java.lang.String,java.lang.String)[pri:0, instance:tests_michroTech_Parameter_DataProvider.copy.homePage_data_Provider2@9d5509a]" started-at="2024-01-02T20:33:59 MST" name="receiveData" data-provider="passData" finished-at="2024-01-02T20:33:59 MST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testpilot@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- receiveData -->
+        <test-method signature="receiveData(java.lang.String,java.lang.String)[pri:0, instance:tests_michroTech_Parameter_DataProvider.copy.homePage_data_Provider2@9d5509a]" started-at="2024-01-02T20:33:59 MST" name="receiveData" data-provider="passData" finished-at="2024-01-02T20:33:59 MST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[david@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- receiveData -->
+      </class> <!-- tests_michroTech_Parameter_DataProvider.copy.homePage_data_Provider2 -->
+      <class name="tests_michroTech_Parameter_DataProvider.copy.Test_Customer_Login">
+        <test-method signature="test_Customer_Login(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests_michroTech_Parameter_DataProvider.copy.Test_Customer_Login@179ece50]" started-at="2024-01-02T20:33:59 MST" name="test_Customer_Login" data-provider="alldata" finished-at="2024-01-02T20:34:05 MST" duration-ms="5586" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[david@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[https://it.microtechlimited.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_Customer_Login -->
+      </class> <!-- tests_michroTech_Parameter_DataProvider.copy.Test_Customer_Login -->
+      <class name="tests_michroTech_DataProvider.Test_Employee_Login">
+        <test-method is-config="true" signature="startUp()[pri:0, instance:tests_michroTech_DataProvider.Test_Employee_Login@dd05255]" started-at="2024-01-02T20:33:09 MST" name="startUp" finished-at="2024-01-02T20:33:17 MST" duration-ms="7447" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="test_Employee_Login()[pri:2, instance:tests_michroTech_DataProvider.Test_Employee_Login@dd05255]" started-at="2024-01-02T20:33:17 MST" name="test_Employee_Login" finished-at="2024-01-02T20:33:20 MST" duration-ms="3516" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[-----Skipping this Test---]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: -----Skipping this Test---
+at tests_michroTech_DataProvider.Test_Employee_Login.test_Employee_Login(Test_Employee_Login.java:40)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_Employee_Login -->
+        <test-method is-config="true" signature="Close_All()[pri:0, instance:tests_michroTech_DataProvider.Test_Employee_Login@dd05255]" started-at="2024-01-02T20:34:08 MST" name="Close_All" finished-at="2024-01-02T20:34:08 MST" duration-ms="262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close_All -->
+      </class> <!-- tests_michroTech_DataProvider.Test_Employee_Login -->
+      <class name="tests_dataTables.Class2_DataTable">
+        <test-method signature="class2_DataTable()[pri:0, instance:tests_dataTables.Class2_DataTable@1e800aaa]" started-at="2024-01-02T20:33:44 MST" name="class2_DataTable" finished-at="2024-01-02T20:33:49 MST" duration-ms="5235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- class2_DataTable -->
+      </class> <!-- tests_dataTables.Class2_DataTable -->
+      <class name="tests_michroTech_DataProvider.Test_Create_Order">
+        <test-method signature="test_Create_Order()[pri:0, instance:tests_michroTech_DataProvider.Test_Create_Order@185a6e9]" started-at="2024-01-02T20:33:49 MST" name="test_Create_Order" finished-at="2024-01-02T20:33:59 MST" duration-ms="9305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_Create_Order -->
+      </class> <!-- tests_michroTech_DataProvider.Test_Create_Order -->
+      <class name="tests_michroTech_Parameter_DataProvider.copy.Test_Create_Order">
+        <test-method signature="test_Create_Order()[pri:0, instance:tests_michroTech_Parameter_DataProvider.copy.Test_Create_Order@139982de]" started-at="2024-01-02T20:33:20 MST" name="test_Create_Order" finished-at="2024-01-02T20:33:29 MST" duration-ms="9098" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_Create_Order -->
+      </class> <!-- tests_michroTech_Parameter_DataProvider.copy.Test_Create_Order -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
